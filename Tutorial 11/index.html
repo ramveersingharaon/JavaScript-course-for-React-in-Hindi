@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=s, initial-scale=1.0">
-    <title>tutorial 10</title>
+    <title>tutorial 11</title>
     <script>
         // function tutorial
         document.write("function tutorial")
@@ -12,21 +12,22 @@
         document.write("<br>")
         document.write("<br>")
 
-        function funName (){
-            document.write("My name is Ram")
+        function funName (name,skill,add){ //Perameter
+            // document.write("My name is " + name)
+            document.write(`My name is ${name}` )
         document.write("<br>")
 
-            document.write("I am a full stack developer")
+            document.write("I am a " + skill)
         document.write("<br>")
 
-            document.write("I am from India")
+            document.write("I am from " + add)
         document.write("<br>")
         document.write("<br>")
 
         }
         
-        funName();
-        funName();
+        funName("Ram","Full Stack Developer" ,"India");//argument
+        funName("Veer","App Developer", "Nepal");
     </script>
 </head>
 <body>
