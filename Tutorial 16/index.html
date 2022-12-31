@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 16</title>
+    <script>
+        // Objects
+     let obj = {
+        fname:"Ram",
+        lname:"Veer",
+        book:["JS","React  js"],
+        friend : function(){
+            return "Prakash"
+        },
+        fullname:function(){
+            return this.fname + " " + this.lname
+        },
+        favfood : {
+            sweet : "Rasgulla",
+            salted:"samosa"
+        }
+
+     }
+
+    //  add property 
+    obj.age = 22;
+
+    obj.lname = "Babu"
+
+    // delete property 
+    delete obj.age;
+
+   document.write( obj.book[1])
+   console.log( obj.friend())
+   console.log( obj.fullname())
+   console.log( obj.favfood)
+     console.log(obj)
+    </script>
+</head>
+<body>
+   
+</body>
+</html>
