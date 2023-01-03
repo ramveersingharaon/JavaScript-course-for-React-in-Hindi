@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 17</title>
+    <script>
+        // Object Destructuring 
+           let obj = {
+            name:"Ram",
+            age:22,
+            city:"Agra",
+            favfood:{
+                sweet:"Rasgulla",
+                salted:"samosa"
+            }
+           }
+
+          let myname=  obj.name;
+          console.log(myname)
+
+          let { name,age = 25,city, favfood:{sweet:myfavsweet,salted}}= obj;
+          console.log(age)
+          console.log(myfavsweet)
+
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
