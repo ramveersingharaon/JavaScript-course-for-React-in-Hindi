@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 23</title>
+    <script>
+        // setTimeout 
+        // let name ;
+
+        // if(name === undefined){
+        // setTimeout(function(){
+        //     prompt("What is your name")
+        // },3000)}
+
+
+        setInterval(function(){
+            let currTime= new Date();
+          
+            let hours = currTime.getHours();
+            let minutes = currTime.getMinutes();
+            let seconds = currTime.getSeconds();
+
+            console.log(hours+":"+ minutes+":"+ seconds )
+
+
+        },1000)
+     
+
+          
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
