@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 25</title>
+    <script>
+        // callback function 
+
+        function hello (name){
+            console.log("hello")
+           
+        }
+
+ 
+
+
+
+        function fetchdata(callback){
+            setTimeout(() => {
+                
+                console.log("fetching data")
+                callback()
+            }, 2000);
+        }
+
+        function outputdata(){
+            console.log("output data")
+        }
+
+
+        fetchdata(outputdata)
+        // outputdata()
+      
+
+
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -7,6 +7,6 @@ export  function func1() {
     console.log("Hello everyOne")
 }
 
-export function func2() {
+export   function func2() {
     console.log("Good Moring");
 }
