@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 33</title>
+    <script>
+//    OOPs before es6 
+        // let student1 = {
+        //     name:"Ram",
+        //     age:22,
+        //     city:"Agra",
+        //     add:function(){
+        //         console.log("I am from Uttar Pradesh")
+        //     }
+        // }
+        // let student2 = {
+        //     name:"Babu",
+        //     age:20,
+        //     city:"Delhi",
+        //     add:function(){
+        //         console.log("I am from Uttar Pradesh")
+        //     }
+        // }
+
+        // // console.log(student1.add())
+        // // console.log(student2)
+
+
+        // let student3 = new Object();
+
+        // student3.name= "Prakash"
+        // student3.age= 25
+        // student3.address = function(){
+        //     console.log("I am from Delhi")
+        // }
+        // console.log(student3)
+
+
+        function Student(name,age,city){
+            this.myname = name
+            this.myage = age
+            this.city = city
+            this.address= function(){
+                console.log("I am from Delhi")
+            }
+        }
+
+        let student4 = new Student("Ram",22,"Agra");
+        let student5 = new Student("Babu",25,"Delhi");
+
+
+        console.log(student4)
+        console.log(student5.address())
+
+ 
+    
+
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
