@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 34</title>
+    <script>
+        // inheritance and prototype 
+        
+
+        function Boy (fname,lname,a){
+            this.firstName = fname
+            this.lastName = lname
+            this.age = a
+         
+        }
+
+        Boy.prototype.eat = function(){
+                console.log("boy can eat")
+            }
+        
+
+        let boy3 = new Boy ("Prakash","Kumar",22);
+        console.log(boy3)
+
+        function Student (rollNo,schName){
+            this.RollNumber = rollNo
+            this.SchoolName = schName
+            
+        }
+        Student.prototype.read = function(){
+                console.log("student can read")
+            }
+
+        Student.prototype.__proto__= Boy.prototype
+        let student1 = new Student(100,"RBS")
+        let student2 = new Student(101,"MTS")
+        console.log(student1)
+        console.log(student1.eat())
+      
+   
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
