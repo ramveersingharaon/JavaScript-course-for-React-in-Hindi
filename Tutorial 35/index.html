@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutorial 35</title>
+    <script>
+
+        //************OOps After ES6*****************
+
+        //============create, access Property and Method in Object=================
+        // class person{
+        //     constructor(n,a){
+        //        this.name = n
+        //        this.age =a 
+        //     }
+        //     Hi(){
+        //         console.log("Hi..")
+        //     }
+        //    static Hello(){
+        //     console.log("Hello...")
+        //     }
+        //    static city = "Agra"
+        // }
+
+        // let person1 = new person ("Ram",22);
+        // console.log(person1)
+        // console.log(person.city)
+
+
+        //============Inheritance=================
+        // class boy {
+        //     constructor(n,c) {
+        //         this.name = n;
+        //         this.city = c
+        //         // console.log("Constructor is called")
+        //     }
+        //     hi(){
+        //         console.log("Hi...")
+        //     }
+        // }
+
+
+        // class student extends boy{
+        //     constructor(p,a,c){
+        //         super(p,c)
+        //         this.age= a;
+        //     }
+        //     Hello(){
+        //         super.hi()
+        //         // console.log(this.name + " "+ this.age)
+        //     }
+        //     Hello2(){
+        //         this.Hello()
+        //         console.log(this.name + " "+ this.age)
+        //     }
+        // }
+
+        // let student1 = new student("Ram",22,"Agra");
+        // console.log(student1)
+        // console.log(student1.Hello2())
+
+
+        //============public and private Property=================
+
+
+        // class student{
+        //     #name = "";
+        //     constructor(n){
+        //         this.#name = n;
+        //     }
+
+        //     #getName(){
+        //        console.log( this.#name)
+        //     }
+        //     info(){
+        //         console.log(this.#getName())
+        //     }
+        // }
+
+        // let student1 = new student("Ram")
+        // console.log(student1.info())
+
+
+        //============Mixin=================
+
+          let student = {
+            Hello(){
+                console.log("Hello student")
+            },
+            Hi(){
+                console.log("Hi student")
+            }
+          }
+          let student2 = {
+            Hello2(){
+                console.log("Hello student")
+            },
+            Hi2(){
+                console.log("Hi student")
+            }
+          }
+
+
+          class user {
+            constructor(n){
+                this.name = n
+            }
+            usermethod(){
+                console.log("This is user method")
+            }
+          }
+
+          Object.assign(user.prototype,student)
+          Object.assign(user.prototype,student2)
+
+          let user1 = new user("Ram")
+          console.log(user1)
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
