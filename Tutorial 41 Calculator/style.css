@@ -1,0 +1,86 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container{
+    width: 350px;
+    height: 500px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.calculator{
+    width: 98%;
+    height: 98%;
+    background-color: burlywood;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.calculator .screen{
+    width: 95%;
+    height: 20%;
+    background-color: rgb(31,20,20);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    margin-top: 15px;
+    border-radius: 5px 5px 0 0;
+}
+.calculator .buttons{
+    width: 95%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.buttons .row{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.row button{
+    position: relative;
+    width: 20%;
+    padding: 16px 30px;
+    font-size: 20px;
+   border: none;
+   background-color: goldenrod;
+   border-top: 1px solid white;
+   border-bottom: 1px solid white;
+   border-radius: 10px;
+   font-weight: bold;
+   transition: .3s;
+}
+.row .spacial_key{
+    background-color: chocolate;
+}
+button:hover{
+    font-size: 30px;
+}
+button::after{
+    content: "";
+    width: 20%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: white;
+    border-radius: 10px;
+}
